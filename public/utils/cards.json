@@ -1,7 +1,42 @@
-{
-    "title": "NETFLIX PREMIUM",
-    "movies": ["dark","merlina","twd","anne","you","lcdp","st"],
-    "subtitle": "PERFIL EXTRA",
-    "selector": ["PERFIL EXTRA"],
-    "alt": "netflix"
-}
+[
+    {
+        "title": "NETFLIX PREMIUM",
+        "movies": ["dark","merlina","twd","anne","you","lcdp","st"],
+        "subtitle": "PERFIL EXTRA",
+        "alt": "netflix",
+        "planes": ["1 MES 1 PANTALLA $7.800"],
+        "colorTitle": "netflixColor"
+    },
+    {
+        "title": "DISNEY PREMIUM",
+        "movies": ["cars", "frozen", "espn", "zootopia", "ratatouille", "lbylb", "peterpan"],
+        "subtitle": "DISNEY PREMIUM / DISNEY HULU",
+        "alt": "disney",
+        "planes": ["1 MES 1 PANTALLA DISNEY PREMIUM $7.000", " 1 MES 1 PANTALLA DISNEY HULU $3.900"],
+        "colorTitle": "disneyColor"
+    }, 
+    {
+        "title": "PRIME VIDEO",
+        "movies": ["megan", "elconjuro2", "theboys", "forrest", "fnaf", "sonic", "upgraded"],
+        "subtitle": "PRIME VIDEO",
+        "alt": "prime",
+        "planes": ["1 MES 1 PANTALLA $2.000","2 MESES 1 PANTALLA $3.500", "1 MES 2 PANTALLAS $3.000", "2 MESES 2 PANTALLAS $4.500"],
+        "colorTitle": "primeColor"
+    },
+    {
+        "title": "HBO MAX",
+        "movies": ["tlou", "witches", "friends", "derry", "hotd", "titans", "from"],
+        "subtitle": "HBO MAX",
+        "alt": "hbo",
+        "planes": ["1 MES 1 PERFIL $2.000","5 PERFILES 3 PANTALLAS 1 MES $7.500"],
+        "colorTitle": "hboColor"
+    },
+    {
+        "title": "PARAMOUNT",
+        "movies": ["pdls", "halo", "pawpatrol", "stealteam", "landman", "primate", "spongebob"],
+        "subtitle": "PARAMOUNT",
+        "alt": "paramount",
+        "planes": ["1 MES 1 PANTALLA $2.700"],
+        "colorTitle": "paramountColor"
+    }
+]

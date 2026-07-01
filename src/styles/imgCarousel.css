@@ -1,0 +1,228 @@
+/* IMAGENES NETFLIX CARRUSEL */
+.dark {
+    background-image: url(../assets/Images/dark.jpeg);
+    background-size: cover;
+}
+
+.merlina {
+    background-image: url(../assets/Images/merlina.jpeg);
+    background-size: cover;
+}
+
+.twd {
+    background-image: url(../assets/Images/twd.jpeg);
+    background-size: cover;
+}
+
+.anne {
+    background-image: url(../assets/Images/anne.jpeg);
+    background-size: cover;
+}
+
+.you {
+    background-image: url(../assets/Images/you.jpeg);
+    background-size: cover;
+}
+
+.lcdp {
+    background-image: url(../assets/Images/lcdp.jpeg);
+    background-size: cover;
+}
+
+.st {
+    background-image: url(../assets/Images/st.jpeg);
+    background-size: cover;
+}
+
+/* IMAGENES DISNEY CARRUSEL */
+.cars {
+    background-image: url(../assets/Images/cars.jpeg);
+    background-size: cover;
+}
+
+.frozen {
+    background-image: url(../assets/Images/frozen.jpeg);
+    background-size: cover;
+}
+
+.espn {
+    background-image: url(../assets/Images/espn.jpeg);
+    background-size: cover;
+}
+
+.zootopia {
+    background-image: url(../assets/Images/zootopia.jpeg);
+    background-size: cover;
+}
+
+.ratatouille {
+    background-image: url(../assets/Images/ratatouille.jpeg);
+    background-size: cover;
+}
+
+.lbylb {
+    background-image: url(../assets/Images/lbylb.jpeg);
+    background-size: cover;
+}
+
+.peterpan {
+    background-image: url(../assets/Images/peterpan.jpeg);
+    background-size: cover;
+}
+
+/* IMAGENES PRIME VIDEO CARRUSEL */
+.megan {
+    background-image: url(./Images/megan.jpeg);
+    background-size: cover;
+}
+
+.elconjuro2 {
+    background-image: url(./Images/elconjuro2.jpeg);
+    background-size: cover;
+}
+
+.theboys {
+    background-image: url(./Images/theboys.jpeg);
+    background-size: cover;
+}
+
+.forrest {
+    background-image: url(./Images/forrest.jpeg);
+    background-size: cover;
+}
+
+.fnaf {
+    background-image: url(./Images/fnaf.jpeg);
+    background-size: cover;
+}
+
+.sonic {
+    background-image: url(./Images/sonic.jpeg);
+    background-size: cover;
+}
+
+.upgraded {
+    background-image: url(./Images/upgraded.jpeg);
+    background-size: cover;
+}
+
+/* IMAGENES PRIME VIDEO CARRUSEL */
+.megan {
+    background-image: url(../assets/Images/megan.jpeg);
+    background-size: cover;
+}
+
+.elconjuro2 {
+    background-image: url(../assets/Images/elconjuro2.jpeg);
+    background-size: cover;
+}
+
+.theboys {
+    background-image: url(../assets/Images/theboys.jpeg);
+    background-size: cover;
+}
+
+.forrest {
+    background-image: url(../assets/Images/forrest.jpeg);
+    background-size: cover;
+}
+
+.fnaf {
+    background-image: url(../assets/Images/fnaf.jpeg);
+    background-size: cover;
+}
+
+.sonic {
+    background-image: url(../assets/Images/sonic.jpeg);
+    background-size: cover;
+}
+
+.upgraded {
+    background-image: url(../assets/Images/upgraded.jpeg);
+    background-size: cover;
+}
+
+/* IMAGENES HBO MAX CARRUSEL */
+
+.tlou {
+    background-image: url(../assets/Images/tlou.jpeg);
+    background-size: cover;
+}
+
+.witches {
+    background-image: url(../assets/Images/witches.jpeg);
+    background-size: cover;
+}
+
+.friends {
+    background-image: url(../assets/Images/friends.jpeg);
+    background-size: cover;
+}
+
+.derry {
+    background-image: url(../assets/Images/derry.jpeg);
+    background-size: cover;
+}
+
+.hotd {
+    background-image: url(../assets/Images/hotd.jpeg);
+    background-size: cover;
+}
+
+.titans {
+    background-image: url(../assets/Images/titans.jpeg);
+    background-size: cover;
+}
+
+.from {
+    background-image: url(../assets/Images/from.jpeg);
+    background-size: cover;
+}
+
+/* IMAGENES PARAMOUNT CARRUSEL */
+.pdls {
+    background-image: url(../assets/Images/pdls.jpeg);
+    background-size: cover;
+}
+
+.halo {
+    background-image: url(../assets/Images/halo.jpeg);
+    background-size: cover;
+}
+
+.pawpatrol {
+    background-image: url(../assets/Images/pawpatrol.jpeg);
+    background-size: cover;
+}
+
+.stealteam {
+    background-image: url(../assets/Images/stealteam.jpeg);
+    background-size: cover;
+}
+
+.landman {
+    background-image: url(../assets/Images/landman.jpeg);
+    background-size: cover;
+}
+
+.primate {
+    background-image: url(../assets/Images/primate.jpeg);
+    background-size: cover;
+}
+
+.spongebob {
+    background-image: url(../assets/Images/spongebob.jpeg);
+    background-size: cover;
+}
+
+
+/* carousel animation */
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

@@ -78,3 +78,52 @@
         --angle: 360deg;
     }
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    width: 20%;
+    border: dashed rgb(13, 31, 66);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.contactContainer h2{
+    color: white;
+}
+
+footer p{
+    color: #c4c3c14e;
+    font-size: large;
+}
+
+.contactIcons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.contactIcons i{
+    font-size: 40px;
+}
+
+.gradient {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}

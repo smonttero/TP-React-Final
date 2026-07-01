@@ -8,6 +8,18 @@ nav {
     margin-bottom: 20px;
 }
 
+.btnNav{
+    background-color: #0B132D;
+    color: white;
+    border-radius: 15px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.btnNav:hover{
+    background-color: #111e49;
+}
+
 .sm-nav{
     position: absolute;
     left: 1%;

@@ -81,47 +81,101 @@
     color: white;
 }
 
-.dark {
-    background-image: url(../assets/Images/dark.jpeg);
-    background-size: cover;
+.buttonCart {
+    background-color: #1F3A5A;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 3px solid #7D818A;
+    height: 40px;
 }
 
-.merlina {
-    background-image: url(../assets/Images/merlina.jpeg);
-    background-size: cover;
+.buttonCart:hover {
+    cursor: pointer;
 }
 
-.twd {
-    background-image: url(../assets/Images/twd.jpeg);
-    background-size: cover;
+.compras {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
 }
 
-.anne {
-    background-image: url(../assets/Images/anne.jpeg);
-    background-size: cover;
+.compras div select {
+    cursor: pointer;
+    outline: none;
 }
 
-.you {
-    background-image: url(../assets/Images/you.jpeg);
-    background-size: cover;
+.select {
+    appearance: none;
+    background-color: #1F3A5A;
+    color: white;
+    padding: 8px 35px 8px 15px;
+    border: 3px solid #7D818A;
+    border-radius: 4px;
+    font-size: 14px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2309111C'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 750px;
 }
 
-.lcdp {
-    background-image: url(../assets/Images/lcdp.jpeg);
-    background-size: cover;
+.netflixColor{
+    color: #B1060F
 }
 
-.st {
-    background-image: url(../assets/Images/st.jpeg);
-    background-size: cover;
+.disneyColor {
+    color: #073D50;
 }
 
-@keyframes spin {
-    from {
-        transform: translateX(0);
-    }
+.primeColor {
+    color: #202E5C;
+}
 
-    to {
-        transform: translateX(-100%);
-    }
+.hboColor {
+    color: #5407C4;
+}
+
+.paramountColor {
+    color: white;
+}
+
+.divisorCards {
+    border: #0b45e6 1px solid;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px -5px 20px 1px;
+}
+
+.importantContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.importantContainer div{
+    
+    color: white;
+    border: dashed 3px #681e1e;
+    border-radius: 5%;
+    background: transparent;
+    backdrop-filter: blur(1.4px);
+    width: 40%;
+    padding: 2em;
+}
+
+.importantContainer div h3{
+    color: #EF4444;
+    font-size: 2em;
+}
+
+.importantContainer div ul li{
+    font-size: 1.1em;
+    margin-top:3px ;
+    margin-bottom: 3px;
 }

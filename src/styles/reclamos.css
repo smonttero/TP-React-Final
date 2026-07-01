@@ -1,0 +1,86 @@
+form{
+    padding: 30px;
+    background: radial-gradient(#0B132D, #000);
+    color: white;
+    border: 2px solid #130858;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    margin-top: 100px;}
+
+form h2{
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid #130858;
+    border-radius: 6px;
+    background: #050a1a;
+    color: white;
+    outline: none;
+    transition: border 0.3s ease;   
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3b28cc; 
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-send {
+    background-color: #130858;
+    color: white;
+}
+
+.btn-reset {
+    background-color: #333;
+    color: #ccc;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}

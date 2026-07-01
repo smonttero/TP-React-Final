@@ -33,13 +33,13 @@ function Navbar() {
                     <h2>S<span className="letters-color">M</span> STORE</h2>
                 </div>
                 <div className="nav-group">
-                    <button onClick={() => navigate("/")}>
+                    <button className="btnNav work-sans" onClick={() => navigate("/")}>
                         HOME
                     </button>
-                    <button onClick={() => navigate("/principal")}>
+                    <button className="btnNav work-sans" onClick={() => navigate("/principal")}>
                         PRINCIPAL
                     </button>
-                    <button onClick={() => navigate("/reclamos")}>
+                    <button className="btnNav work-sans" onClick={() => navigate("/reclamos")}>
                         RECLAMOS
                     </button>
                 </div>

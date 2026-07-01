@@ -1,11 +1,22 @@
-function Cards({img, title, carousel = [], subtitle, selector, alt}) {
+function Cards({
+    img,
+    title,
+    carousel = [],
+    subtitle,
+    selector,
+    alt,
+    planes,
+    colorTitle,
+}) {
     return (
+        <>
         <div className="cardStructure">
             <div>
                 <img src={img} alt={alt} />
+                <h2 className={colorTitle}>{title}</h2>
             </div>
             <div className="insideCard">
-                <h3>{title}</h3>
+                <h3>{subtitle}</h3>
                 <p>{subtitle}</p>
                 <div className="carousel">
                     <div className="group">
@@ -20,22 +31,27 @@ function Cards({img, title, carousel = [], subtitle, selector, alt}) {
                     </div>
                 </div>
             </div>
-            <div class="compras">
+            <div className="compras">
                 <div>
-                    <select name="Selecciona un plan" id="select-netflix">
-                        <option selected disabled value="Selecciona un plan">Selecciona un plan</option>
-                        <option value="Perfil extra $7.500">Perfil extra $7.800</option>
+                    <select name="Selecciona un plan" className="select work-sans">
+                        <option disabled value="Selecciona un plan">
+                            Selecciona un plan
+                        </option>
+                        {planes.map((plan) => (
+                            <option key={plan} value={plan}>
+                                {plan}
+                            </option>
+                        ))}
                     </select>
                 </div>
-                <div id="div-cart">
-                    <button id="button-cart">
-                        Añadir al Carrito
-                    </button>
+                <div>
+                    <button className="buttonCart work-sans">Añadir al Carrito</button>
                 </div>
             </div>
         </div>
-        
-    )
+        <hr className="divisorCards"/>
+                        </>
+    );
 }
 
-export default Cards
+export default Cards;
