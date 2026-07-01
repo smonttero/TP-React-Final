@@ -1,0 +1,46 @@
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 10;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.sm-nav{
+    position: absolute;
+    left: 1%;
+}
+
+.sm-nav h2{
+    margin: 0px;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: white;
+    gap: 20px;
+    justify-content:end;
+    background: radial-gradient(#000, #0B132D);
+    border-bottom: 3px solid #130858;
+    transition: transform 0.5s ease;
+    padding: 10px;
+}
+
+.nav-group{
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.container-nav div a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.423);
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
+}

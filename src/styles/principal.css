@@ -1,0 +1,80 @@
+.headerclass {
+    display: flex;
+    justify-content: center;
+    border: solid #7D818A;
+    width: 60%;
+    align-items: center;
+    height: 360px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.centerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.smstore {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Importante para que no se deforme */
+    z-index: 3;
+    position: relative;
+}
+
+.letters-color {
+    color: #1F3A5A;
+}
+
+.update-text {
+    font-size: 14px;
+    margin: 15px;
+    color: #7D818A;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.border-color-img {
+    width: 150px;
+    /* Igual al alto para que sea un círculo perfecto */
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.border-color-img::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(from var(--angle), transparent 0%, #ffffff);
+    padding: 77px;
+    border-radius: 50%;
+    z-index: 2;
+    animation: 3s border-sm linear infinite;
+    filter: blur(2px);
+}
+
+@keyframes border-sm {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
