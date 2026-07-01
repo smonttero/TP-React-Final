@@ -1,10 +1,26 @@
 import Canvas from "../components/Canvas"
 import Navbar from "../components/Navbar"
 import smStoreImg from '../assets/Images/smStore.jpeg'
+import Netflix from '../assets/Images/NETFLIX.png'
 import '../styles/principal.css'
-
+import { useEffect, useState } from "react"
+import Cards from "../components/Cards"
+import '../styles/cards.css'
 
 function Principal() {
+  useEffect(() => {
+    obtenerDatos()
+  }, [])
+  const [info, setInfo] = useState({})
+  async function obtenerDatos() {
+    try {
+      const respuesta = await fetch("/utils/cards.json")
+      const data = await respuesta.json()
+      setInfo(data)
+    } catch(error){
+      console.error("No se pudo conectar con cards.json", error)
+    }
+  }
   return (
     <Canvas clase='work-sans'>
       <Navbar></Navbar>
@@ -22,6 +38,16 @@ function Principal() {
         </h3>
       </header>
       </div>
+      <section className="cardContainer">
+      <Cards
+      title={info.title}
+      subtitle={info.subtitle}
+      carousel={info.movies}
+      alt={info.alt}
+      img={Netflix}
+
+      ></Cards>
+      </section>
     </Canvas>
   )
 }

@@ -1,0 +1,127 @@
+.cardStructure {
+    width: 896px;
+    background-color: #09111c;
+    border: solid #7D818A;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardStructure div {
+    width: 100%;
+    display: flex;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardStructure div img {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+}
+
+.insideCard {
+    background-color: black;
+    border-radius: 25px;
+    margin: 25px;
+    /*el auto lo centra al ancho del padre*/
+    border: solid #7D818A 3px;
+    margin-bottom: 0px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 1px;
+    padding: 10px;
+}
+
+.insideCard p {
+    font-size: 16px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px auto;
+    color: #c4c8d2;
+    font-family: sans-serif;
+}
+
+.insideCard h3 {
+    color: #1F3A5A;
+    padding-left: 30px;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+    padding-right: 1em;
+}
+
+.content-carousel {
+    height: 145px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.dark {
+    background-image: url(../assets/Images/dark.jpeg);
+    background-size: cover;
+}
+
+.merlina {
+    background-image: url(../assets/Images/merlina.jpeg);
+    background-size: cover;
+}
+
+.twd {
+    background-image: url(../assets/Images/twd.jpeg);
+    background-size: cover;
+}
+
+.anne {
+    background-image: url(../assets/Images/anne.jpeg);
+    background-size: cover;
+}
+
+.you {
+    background-image: url(../assets/Images/you.jpeg);
+    background-size: cover;
+}
+
+.lcdp {
+    background-image: url(../assets/Images/lcdp.jpeg);
+    background-size: cover;
+}
+
+.st {
+    background-image: url(../assets/Images/st.jpeg);
+    background-size: cover;
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
