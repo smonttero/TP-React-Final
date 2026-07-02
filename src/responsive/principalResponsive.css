@@ -1,0 +1,185 @@
+/* ============================================
+   RESPONSIVE - Página Principal
+   Breakpoints: 1024px (tablet), 768px (mobile grande), 480px (mobile chico)
+   Nota: el Navbar y el Footer/Contact se comparten con Reclamos,
+   por eso su responsive vive acá.
+============================================ */
+
+/* ---------- TABLET (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+    .headerclass {
+        width: 80%;
+    }
+
+    *:not(img),
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+    .cardStructure {
+        width: 90%;
+        max-width: 896px;
+    }
+
+    .select {
+        width: 100%;
+    }
+
+    .importantContainer div {
+        width: 60%;
+    }
+
+    .contactContainer {
+        width: 35%;
+    }
+}
+
+/* ---------- MOBILE GRANDE (≤ 768px) ---------- */
+@media (max-width: 768px) {
+    /* Navbar */
+    nav {
+        height: auto;
+    }
+
+    .container-nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 12px 10px;
+    }
+
+    .sm-nav {
+        position: static;
+    }
+
+    .nav-group {
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Header */
+    .headerclass {
+        width: 90%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .border-color-img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .border-color-img::after {
+        padding: 57px;
+    }
+
+    /* Cards */
+    .cardStructure {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .compras {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .compras > div {
+        width: 100%;
+    }
+
+    .buttonCart {
+        width: 100%;
+    }
+
+    .content-carousel {
+        height: 110px;
+        
+    }
+
+    /* Important */
+    .importantContainer div {
+        width: 85%;
+        padding: 1.2em;
+    }
+
+    .importantContainer div h3 {
+        font-size: 1.5em;
+    }
+
+    /* Footer / Contact */
+    .contactContainer {
+        width: 60%;
+    }
+
+    .divisorCards {
+        width: 85%;
+    }
+}
+
+/* ---------- MOBILE CHICO (≤ 480px) ---------- */
+@media (max-width: 480px) {
+    /* Navbar */
+    .nav-group {
+        gap: 8px;
+    }
+
+    .btnNav {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    .sm-nav h2 {
+        font-size: 1.1rem;
+    }
+
+    /* Header */
+    .headerclass h3 {
+        font-size: 0.95rem;
+    }
+
+    .border-color-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .border-color-img::after {
+        padding: 47px;
+    }
+
+    /* Cards */
+    .cardStructure {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .insideCard h3 {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    .content-carousel {
+        height: 90px;
+    }
+
+    /* Important */
+    .importantContainer div {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .importantContainer div ul li {
+        font-size: 0.95em;
+    }
+
+    /* Footer / Contact */
+    .contactContainer {
+        width: 85%;
+    }
+
+    .contactIcons i {
+        font-size: 30px;
+    }
+}

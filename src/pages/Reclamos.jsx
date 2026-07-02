@@ -7,6 +7,7 @@ import '../styles/global.css'
 import '../styles/reclamos.css'
 import '../styles/navbar.css'
 import Contact from '../components/Contact'
+import '../responsive/reclamosResponsive.css'
 
 const initialState = {
     nombre: '',

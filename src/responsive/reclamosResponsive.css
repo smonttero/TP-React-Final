@@ -1,0 +1,60 @@
+/* ============================================
+   RESPONSIVE - Página Reclamos (formulario de contacto)
+   Breakpoints: 1024px (tablet), 768px (mobile grande), 480px (mobile chico)
+============================================ */
+
+/* ---------- TABLET (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+    .form-reclamos {
+        width: 70%;
+    }
+}
+
+/* ---------- MOBILE GRANDE (≤ 768px) ---------- */
+@media (max-width: 768px) {
+    .centrarReclamo {
+        padding: 0 15px;
+    }
+
+    .form-reclamos {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-reclamos h2 {
+        font-size: 1.3rem;
+    }
+
+    .form-reclamos .radio-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* ---------- MOBILE CHICO (≤ 480px) ---------- */
+@media (max-width: 480px) {
+    .form-reclamos {
+        width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .form-reclamos .input-group label {
+        font-size: 0.85rem;
+    }
+
+    .form-reclamos input,
+    .form-reclamos select,
+    .form-reclamos textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .form-reclamos .button-group {
+        flex-direction: column;
+    }
+
+    .form-reclamos button {
+        width: 100%;
+    }
+}
