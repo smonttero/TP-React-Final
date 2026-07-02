@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom'
 import Canvas from '../components/Canvas'
-import Navbar from '../components/Navbar'
 import '../styles/home.css'
 import smStoreImg from '../assets/Images/smStore.jpeg'
 
