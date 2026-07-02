@@ -1,3 +1,5 @@
+import Gallery from "./Gallery";
+
 function Cards({
     img,
     title,
@@ -18,18 +20,7 @@ function Cards({
                 <div className="insideCard">
                     <h3>{subtitle}</h3>
                     <p>{subtitle}</p>
-                    <div className="carousel">
-                        <div className="group">
-                            {carousel.map((movie) => (
-                                <div key={movie} className={`content-carousel ${movie}`}></div>
-                            ))}
-                        </div>
-                        <div className="group" aria-hidden>
-                            {carousel.map((movie) => (
-                                <div key={movie} className={`content-carousel ${movie}`}></div>
-                            ))}
-                        </div>
-                    </div>
+                    <Gallery images={carousel} />
                 </div>
                 <div className="compras">
                     <div>
