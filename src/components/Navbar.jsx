@@ -19,7 +19,6 @@ function Navbar() {
 
         window.addEventListener('scroll', handleScroll)
 
-        // cleanup: se ejecuta si el componente se desmonta
         return () => {
             window.removeEventListener('scroll', handleScroll)
             window.clearTimeout(isScrolling)

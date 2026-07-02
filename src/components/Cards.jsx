@@ -33,7 +33,11 @@ function Cards({
                 </div>
                 <div className="compras">
                     <div>
-                        <select name="Selecciona un plan" className="select work-sans" defaultValue="Selecciona un plan">
+                        <select
+                            name="Selecciona un plan"
+                            className="select work-sans"
+                            defaultValue="Selecciona un plan"
+                        >
                             <option value="Selecciona un plan" disabled hidden>
                                 Selecciona un plan
                             </option>

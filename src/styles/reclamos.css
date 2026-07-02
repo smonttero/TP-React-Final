@@ -1,0 +1,95 @@
+.centrarReclamo{
+    display: flex;
+    justify-content: center;
+}
+
+.form-reclamos {
+    padding: 30px;
+    background: radial-gradient(#0B132D, #000);
+    color: white;
+    border: 2px solid #130858;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form-reclamos h2 {
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+.form-reclamos .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-reclamos .input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-reclamos input[type="text"],
+.form-reclamos input[type="email"],
+.form-reclamos input[type="tel"],
+.form-reclamos select,
+.form-reclamos textarea {
+    padding: 12px;
+    border: 1px solid #130858;
+    border-radius: 6px;
+    background: #050a1a;
+    color: white;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-reclamos input:focus,
+.form-reclamos select:focus,
+.form-reclamos textarea:focus {
+    border-color: #3b28cc;
+}
+
+.form-reclamos .radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.form-reclamos .radio-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.form-reclamos .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-reclamos button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.form-reclamos .btn-send {
+    background-color: #130858;
+    color: white;
+}
+
+.form-reclamos .btn-reset {
+    background-color: #333;
+    color: #ccc;
+}
+
+.form-reclamos button:hover {
+    opacity: 0.8;
+}

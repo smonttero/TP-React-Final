@@ -11,6 +11,9 @@ import { useEffect, useState } from "react"
 import Cards from "../components/Cards"
 import '../styles/cards.css'
 import '../styles/imgCarousel.css'
+import Contact from "../components/Contact"
+import useFetch from "../hooks/useFetch"
+import '../responsive/principalResponsive.css'
 
 const imagenes = {
   netflix: Netflix,
@@ -21,21 +24,8 @@ const imagenes = {
 }
 
 function Principal() {
-  useEffect(() => {
-    obtenerDatos()
-  }, [])
 
-  const [info, setInfo] = useState([])
-
-  async function obtenerDatos() {
-    try {
-      const respuesta = await fetch("/utils/cards.json")
-      const data = await respuesta.json()
-      setInfo(data)
-    } catch (error) {
-      console.error("No se pudo conectar con cards.json", error)
-    }
-  }
+  const info = useFetch("/utils/cards.json")
 
   return (
     <Canvas clase='work-sans'>
@@ -80,23 +70,7 @@ function Principal() {
         </div>
       </aside>
       <hr className="divisorCards"/>
-      <footer>
-        <section className="contactContainer">
-            <h2 className="work-sans">Contactos</h2>
-            <div className="contactIcons">
-                    <a href="https://wa.me/message/SIONJ7EXUALGF1" style={{color: "transparent"}}>
-                        <i className="fa-brands fa-whatsapp" style={{color: "rgb(25, 136, 42)"}}></i>
-                    </a>
-                    <a href="https://www.instagram.com/santtyy.ssj/" style={{color: "transparent"}}>
-                        <i className="fa-brands fa-instagram gradient"></i>
-                    </a>
-                    <a href="https://discord.gg/VFEjzyws" style={{color: "transparent"}}>
-                        <i className="fa-brands fa-discord" style={{color: "#5865f2"}}></i>
-                    </a>
-                </div>
-        </section>
-        <p>© SM Store. Todos los derechos reservados.</p>
-    </footer>
+      <Contact></Contact>
     </Canvas>
   )
 }
