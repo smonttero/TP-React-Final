@@ -71,6 +71,10 @@ function Principal() {
       </aside>
       <hr className="divisorCards"/>
       <Contact></Contact>
+      <button className="btnCart">
+        <i className="fa-solid fa-cart-shopping" style={{color: "rgb(0, 0, 0)"}}></i>
+        <span id="cartItemCount" style={{display:"none"}}>0</span>
+      </button>
     </Canvas>
   )
 }
